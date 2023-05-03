@@ -9,7 +9,6 @@ import org.springframework.data.rest.core.annotation.RestResource;
 import org.springframework.stereotype.Component;
 
 
-@Component
 public interface PostRepository extends JpaRepository<Post, Long>{
 
 	@RestResource(rel = "contains-title", path = "containsTitle")
